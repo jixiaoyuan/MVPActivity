@@ -5,7 +5,7 @@ Android Studio自定义模板之MVPActivity
 ```xml
 <?xml version="1.0"?>
 <globals>
-	<global id="author" value="sheaJi" />
+    <global id="author" value="sheaJi" />
     <global id="hasNoActionBar" type="boolean" value="false" />
     <global id="parentActivityClass" value="" />
     <global id="simpleLayoutName" value="${layoutName}" />
