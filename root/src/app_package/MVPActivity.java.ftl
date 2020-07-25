@@ -20,8 +20,6 @@ public class ${activityClass} extends BaseActivity<${contractName}.Model, ${cont
 <#else>
 public class ${activityClass} extends BaseActivity{
 </#if>
-<#include "../../../../common/jni_code_usage.java.ftl">
-<#include "../../../../common/jni_code_snippet.java.ftl">
 
  	/*-----------------------静态Activity启动方法区-------------------*/
 
