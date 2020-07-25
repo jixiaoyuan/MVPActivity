@@ -1,7 +1,12 @@
 package ${packageName};
 
-import ${superClassFqcn};
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import com.lushang.R;
+import android.os.Bundle;
+
 <#if includeCppSupport!false>
 import android.widget.TextView;
 </#if>
@@ -11,17 +16,15 @@ import android.widget.TextView;
  * Model: {@link ${modelName}} Presenter:{@link ${presenterName}}
 </#if>
  * @Author: ${author}
- * @Description: 
+ * @Description:
  * @Date: Create in ${aDateTime}
  * @Modified By:
  */
 <#if generateMVP>
-public class ${activityClass} extends BaseActivity<${contractName}.Model, ${contractName}.View, ${contractName}.Presenter> implements ${contractName}.View {
+public class ${activityClass} extends NewBaseActivity<${contractName}.Model, ${contractName}.View, ${contractName}.Presenter> implements ${contractName}.View {
 <#else>
-public class ${activityClass} extends BaseActivity{
+public class ${activityClass} extends NewBaseActivity{
 </#if>
-<#include "../../../../common/jni_code_usage.java.ftl">
-<#include "../../../../common/jni_code_snippet.java.ftl">
 
  	/*-----------------------静态Activity启动方法区-------------------*/
 

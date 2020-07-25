@@ -1,15 +1,15 @@
 package ${packageName};
 
 import android.os.Bundle;
-import com.xx.http.rx.BaseSubscribe;
-import com.xx.mvp.base.BasePresenterImpl;
 import rx.Subscription;
+import com.lushang.http.rx.NewExceptionObserver;
+import com.lushang.mvp.base.BasePresenterImpl;
 
 <#assign aDateTime = .now>
 /**
  * Model: {@link ${modelName}} View:{@link ${activityClass}}
  * @Author: ${author}
- * @Description: 
+ * @Description:
  * @Date: Create in ${aDateTime}
  * @Modified By:
  */
@@ -20,14 +20,14 @@ class ${presenterName} extends BasePresenterImpl<${contractName}.Model, ${contra
     public void onCreate(Bundle savedInstanceState) {
 
     }
-	
+
 	/**
-     * 更新数据
+     *
      */
     @Override
     public void update() {
         Subscription subscribe = getModel().update()
-                .subscribe(new BaseSubscribe<Object>(this) {
+                .subscribe(new NewExceptionObserver<Object>(this) {
                     @Override
                     protected void onSuccess(Object bean) {
                     }

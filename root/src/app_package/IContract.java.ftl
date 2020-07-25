@@ -1,8 +1,8 @@
 package ${packageName};
 
-import com.xx.mvp.base.BaseModel;
-import com.xx.mvp.base.BasePresenter;
-import com.xx.mvp.base.BaseView;
+import com.lushang.mvp.base.BaseModel;
+import com.lushang.mvp.base.BasePresenter;
+import com.lushang.mvp.base.BaseView;
 import rx.Observable;
 <#assign aDateTime = .now>
 /**
@@ -16,7 +16,7 @@ public interface ${contractName} {
 
    interface Model extends BaseModel {
         /**
-         * 更新数据
+         *
          *
          * @return
          */
@@ -31,7 +31,7 @@ public interface ${contractName} {
     interface Presenter extends BasePresenter<Model, View> {
 
         /**
-         * 更新数据
+         *
          */
         void update();
     }

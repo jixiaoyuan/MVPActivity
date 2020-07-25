@@ -1,8 +1,8 @@
 package ${packageName};
 
-import com.xx.bean.base.BaseResult;
-import com.xx.http.rx.TransformUtils;
-import com.xx.mvp.base.BaseModelImpl;
+import com.lushang.bean.base.BaseResult;
+import com.lushang.http.rx.TransformUtils;
+import com.lushang.mvp.base.BaseModelImpl;
 import retrofit2.http.POST;
 import rx.Observable;
 <#assign aDateTime = .now>
@@ -25,7 +25,7 @@ public class ${modelName} extends BaseModelImpl<${modelName}.Service> implements
 
     public interface Service {
         /**
-         * 更新数据
+         *
          *
          * @return
          */
