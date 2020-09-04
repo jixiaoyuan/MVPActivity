@@ -1,9 +1,9 @@
 package ${packageName};
 
 import android.os.Bundle;
+import com.lushang.core.base.BasePresenterImpl;
+import com.lushang.core.http.rx.NewExceptionObserver;
 import rx.Subscription;
-import com.lushang.http.rx.NewExceptionObserver;
-import com.lushang.mvp.base.BasePresenterImpl;
 
 <#assign aDateTime = .now>
 /**

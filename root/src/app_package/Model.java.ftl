@@ -1,8 +1,8 @@
 package ${packageName};
 
-import com.lushang.bean.base.BaseResult;
-import com.lushang.http.rx.TransformUtils;
-import com.lushang.mvp.base.BaseModelImpl;
+import com.lushang.core.base.BaseModelImpl;
+import com.lushang.core.bean.base.BaseResult;
+import com.lushang.core.http.rx.TransformUtils;
 import retrofit2.http.POST;
 import rx.Observable;
 <#assign aDateTime = .now>

@@ -1,8 +1,8 @@
 package ${packageName};
 
-import com.lushang.mvp.base.BaseModel;
-import com.lushang.mvp.base.BasePresenter;
-import com.lushang.mvp.base.BaseView;
+import com.lushang.core.base.BaseModel;
+import com.lushang.core.base.BasePresenter;
+import com.lushang.core.base.BaseView;
 import rx.Observable;
 <#assign aDateTime = .now>
 /**

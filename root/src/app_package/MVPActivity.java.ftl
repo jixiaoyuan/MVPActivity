@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import com.lushang.R;
-import android.os.Bundle;
+import com.lushang.core.base.BaseActivity;
 
 <#if includeCppSupport!false>
 import android.widget.TextView;
@@ -21,9 +21,9 @@ import android.widget.TextView;
  * @Modified By:
  */
 <#if generateMVP>
-public class ${activityClass} extends NewBaseActivity<${contractName}.Model, ${contractName}.View, ${contractName}.Presenter> implements ${contractName}.View {
+public class ${activityClass} extends BaseActivity<${contractName}.Model, ${contractName}.View, ${contractName}.Presenter> implements ${contractName}.View {
 <#else>
-public class ${activityClass} extends NewBaseActivity{
+public class ${activityClass} extends BaseActivity{
 </#if>
 
  	/*-----------------------静态Activity启动方法区-------------------*/
@@ -41,6 +41,11 @@ public class ${activityClass} extends NewBaseActivity{
     @Override
     public int getContentView() {
         return R.layout.${layoutName};
+    }
+	
+	@Override
+    protected String getTitleName() {
+        return null;
     }
 
     @Override
